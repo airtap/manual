@@ -1,0 +1,42 @@
+{
+  "name": "airtap-manual",
+  "version": "0.0.0",
+  "description": "Provider for manually opened browser",
+  "license": "MIT",
+  "author": "Vincent Weevers",
+  "scripts": {
+    "test": "standard && hallmark && depcheck && npm run test:unit",
+    "test:unit": "cross-env DEBUG=airtap* nyc node test",
+    "fix:js": "standard --fix",
+    "fix:md": "hallmark --fix"
+  },
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "abstract-browser": "^1.0.0",
+    "browser-provider": "^1.1.0"
+  },
+  "devDependencies": {
+    "airtap": "github:airtap/airtap#9077551",
+    "cross-env": "^7.0.2",
+    "depcheck": "^1.2.0",
+    "hallmark": "^3.0.0",
+    "nyc": "^15.1.0",
+    "standard": "^14.3.4",
+    "tape": "^5.0.1"
+  },
+  "keywords": [
+    "airtap",
+    "browser",
+    "browser-provider",
+    "manual",
+    "test"
+  ],
+  "repository": "airtap/manual",
+  "bugs": "https://github.com/airtap/manual/issues",
+  "homepage": "https://github.com/airtap/manual",
+  "engines": {
+    "node": ">=10.2"
+  }
+}
